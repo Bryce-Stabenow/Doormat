@@ -1,6 +1,7 @@
 import TileHolder from './components/TileHolder';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import DailyInfo from './components/DailyInfo';
 import { useState } from 'react';
 
 function App() {
@@ -130,31 +131,6 @@ function App() {
 			text: 'New Tile',
 			link: '',
 		},
-		{
-			tileNum: 26,
-			text: 'New Tile',
-			link: '',
-		},
-		{
-			tileNum: 27,
-			text: 'New Tile',
-			link: '',
-		},
-		{
-			tileNum: 28,
-			text: 'New Tile',
-			link: '',
-		},
-		{
-			tileNum: 29,
-			text: 'New Tile',
-			link: '',
-		},
-		{
-			tileNum: 30,
-			text: 'New Tile',
-			link: '',
-		},
 	]);
 	const [user] = useState({
 		firstName: 'Sara',
@@ -164,7 +140,10 @@ function App() {
 	return (
 		<main>
 			<Header userFirstName={user.firstName} />
-			<TileHolder tiles={tiles} />
+			<div className="appSection">
+				<TileHolder tiles={tiles} />
+				<DailyInfo />
+			</div>
 			<Footer />
 		</main>
 	);

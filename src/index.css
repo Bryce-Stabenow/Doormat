@@ -9,11 +9,6 @@ body {
 	padding: 0;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
-}
-
 main {
 	display: flex;
 	flex-flow: column nowrap;
@@ -21,6 +16,20 @@ main {
 	height: 100vh;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.appSection {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1167%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1168)'%3e%3c/rect%3e%3cpath d='M802.4913199752366 273.35506219218416L957.3602549144169 284.18455308156797 968.1897458038007 129.3156181423876 813.3208108646204 118.48612725300379z' fill='rgba(68%2c 160%2c 98%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-27.125%2c286.041C-14.045%2c286.164%2c-1.584%2c279.603%2c4.861%2c268.22C11.22%2c256.99%2c9.307%2c243.604%2c3.402%2c232.129C-3.16%2c219.377%2c-12.794%2c206.603%2c-27.125%2c206.063C-42.134%2c205.497%2c-55.169%2c216.247%2c-61.917%2c229.666C-68.042%2c241.845%2c-65.245%2c256.028%2c-58.086%2c267.629C-51.327%2c278.581%2c-39.994%2c285.92%2c-27.125%2c286.041' fill='rgba(68%2c 160%2c 98%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M614.6083654505525 221.93908893085066L638.8479360628818 359.4085250598929 752.0778015795947 197.69951831852134z' fill='rgba(68%2c 160%2c 98%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1314.197%2c344.179C1333.184%2c343.95%2c1352.611%2c337.33%2c1361.916%2c320.778C1371.074%2c304.489%2c1365.826%2c284.997%2c1356.607%2c268.742C1347.232%2c252.212%2c1333.149%2c238.038%2c1314.197%2c236.641C1292.737%2c235.059%2c1270.211%2c242.985%2c1259.37%2c261.573C1248.464%2c280.273%2c1252.469%2c303.918%2c1264.44%2c321.955C1275.206%2c338.176%2c1294.729%2c344.414%2c1314.197%2c344.179' fill='rgba(68%2c 160%2c 98%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M800.0393406758386 446.9330064978908L855.0754291060283 519.968362651417 928.1107852595545 464.9322742212273 873.0746968293648 391.8969180677011z' fill='rgba(68%2c 160%2c 98%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M282.802%2c364.877C315.047%2c366.632%2c342.093%2c343.059%2c358.25%2c315.099C374.42%2c287.117%2c380.706%2c252.316%2c363.745%2c224.807C347.42%2c198.329%2c313.891%2c191.7%2c282.802%2c192.732C253.827%2c193.694%2c224.513%2c204.421%2c210.665%2c229.891C197.302%2c254.469%2c207.165%2c282.921%2c220.351%2c307.595C234.621%2c334.297%2c252.571%2c363.232%2c282.802%2c364.877' fill='rgba(68%2c 160%2c 98%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1167'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1168'%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(68%2c 160%2c 98%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+	background-position: center;
+	background-size: cover;
 }
 
 header,
@@ -71,19 +80,20 @@ footer div:hover {
 }
 
 .tiles {
-	background-color: rgb(74, 75, 74);
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
 	column-gap: 7px;
 	row-gap: 7px;
-	width: 94%;
+	width: 100%;
 	max-width: 630px;
-	height: 94%;
-	padding: 3% 3%;
+	min-height: 94%;
+	max-height: 94%;
+	padding: 20px 20px;
 }
 .singleTile {
 	text-align: center;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 10px;
 	cursor: pointer;
 	max-width: 120px;
@@ -92,16 +102,15 @@ footer div:hover {
 	justify-content: center;
 	align-items: center;
 }
-.singleTile h3 {
-	margin: 0;
-}
 .singleTile:hover {
 	transform: scale(1.05);
 	transition-duration: 150ms;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 .tilePhoto {
+	padding-top: 5px;
+	max-width: 50%;
 	min-width: 50%;
 	height: auto;
 }

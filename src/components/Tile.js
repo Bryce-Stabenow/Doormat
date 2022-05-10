@@ -22,7 +22,14 @@ function Tile({ tile }) {
 				window.open(`${tile.link}`, '_blank', 'noopener', 'noreferrer')
 			}
 		>
-			<h3>{tile.text}</h3>
+			<h3
+				style={{
+					margin: 0,
+					color: tile.link === '' ? 'rgba(0,0,0, 0.25)' : 'black',
+				}}
+			>
+				{tile.text}
+			</h3>
 			<img
 				className={`tilePhoto ${getLogo(tile.link)}`}
 				src={logoData}
