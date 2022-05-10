@@ -71,12 +71,13 @@ footer div:hover {
 }
 
 .tiles {
-	background-color: rgb(68, 160, 98);
+	background-color: rgb(74, 75, 74);
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	column-gap: 7px;
 	row-gap: 7px;
 	width: 94%;
+	max-width: 630px;
 	height: 94%;
 	padding: 3% 3%;
 }
@@ -85,9 +86,22 @@ footer div:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 10px;
 	cursor: pointer;
+	max-width: 120px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.singleTile h3 {
+	margin: 0;
 }
 .singleTile:hover {
 	transform: scale(1.05);
 	transition-duration: 150ms;
 	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.tilePhoto {
+	min-width: 50%;
+	height: auto;
 }
