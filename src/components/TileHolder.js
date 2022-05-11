@@ -1,9 +1,9 @@
 import Tiles from './Tiles';
 
-function TileHolder({ tiles }) {
+function TileHolder({ tiles, setEditorOpen }) {
 	return (
 		<div className="tiles">
-			<Tiles tiles={tiles} />
+			<Tiles tiles={tiles} setEditorOpen={setEditorOpen} />
 		</div>
 	);
 }

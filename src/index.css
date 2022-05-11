@@ -104,13 +104,65 @@ footer div:hover {
 }
 .singleTile:hover {
 	transform: scale(1.05);
-	transition-duration: 150ms;
+	transition-duration: 100ms;
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
 .tilePhoto {
+	transition-duration: 100ms;
 	padding-top: 5px;
 	max-width: 50%;
 	min-width: 50%;
 	height: auto;
+}
+
+.tileEditorForm,
+.dailyInfo {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.25);
+	border-radius: 10px;
+	padding: 20px;
+	height: 88%;
+	max-width: 25%;
+	min-width: 25%;
+	margin-right: 20px;
+}
+
+.tileEditorForm h4 {
+	font-size: 2.5rem;
+	margin: 0;
+	color: rgb(37, 37, 37);
+	font-family: 'Gill Sans', sans-serif;
+	font-weight: 900;
+	text-decoration: underline wavy;
+}
+.tileEditorForm label {
+	font-size: 1.5rem;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-weight: 500;
+	color: rgb(37, 37, 37);
+}
+.tileEditorForm input {
+	font-size: 1.5rem;
+	border-radius: 5px;
+	border: none;
+}
+.tileSaveButton {
+	margin-top: 30px;
+	width: 70%;
+	font-weight: 900;
+	align-self: center;
+	padding: 10px !important;
+	border-radius: 10px !important;
+	background-color: rgb(37, 37, 37);
+	color: white;
+	transition-duration: 300ms;
+	cursor: pointer;
+}
+.tileSaveButton:hover {
+	color: rgb(37, 37, 37);
+	background-color: white;
 }

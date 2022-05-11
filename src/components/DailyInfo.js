@@ -1,5 +1,5 @@
 function DailyInfo() {
-	return <div>DailyInfo</div>;
+	return <div className="dailyInfo">DailyInfo</div>;
 }
 
 export default DailyInfo;
