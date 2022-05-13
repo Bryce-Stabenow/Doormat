@@ -10,6 +10,11 @@ document.addEventListener('contextmenu', (event) => {
 });
 
 function App() {
+	const onSubmit = (event) => {
+		event.preventDefault();
+		setEditor(false);
+	};
+
 	function setEditorOpen(currentTile) {
 		if (editorOpen) {
 			setEditor(false);
@@ -194,6 +199,7 @@ function App() {
 						tile={editorTile}
 						tiles={tiles}
 						setTiles={setTiles}
+						onSubmit={onSubmit}
 					/>
 				) : (
 					<DailyInfo />
