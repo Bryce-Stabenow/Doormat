@@ -184,8 +184,8 @@ function App() {
 		},
 	]);
 	const [user] = useState({
-		firstName: 'Bryce',
-		lastName: 'Stabenow',
+		firstName: 'Stranger',
+		lastName: 'Danger',
 	});
 	const [useWeatherZip, setWeatherZip] = useState('90210');
 	const [useWeather, setWeather] = useState({
