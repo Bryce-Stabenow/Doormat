@@ -166,3 +166,67 @@ footer div:hover {
 	color: rgb(37, 37, 37);
 	background-color: white;
 }
+.dailyInfo {
+	justify-content: space-evenly;
+}
+.dailyInfo h1 {
+	margin-bottom: 0;
+	font-family: 'Gill Sans';
+	font-weight: 900;
+	text-align: center;
+}
+.dailyInfo form {
+	margin-top: 10px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+#weatherTextInput {
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	padding: 5px;
+}
+#weatherSubmitInput {
+	width: 50%;
+	align-self: center;
+	background-color: rgb(45, 119, 70);
+	color: white;
+	font-family: 'Gill Sans';
+	border: none;
+	margin-top: 5px;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	box-shadow: 3px 3px black;
+	transition-duration: 100ms;
+}
+#weatherSubmitInput:hover {
+	cursor: pointer;
+	box-shadow: 7px 7px black;
+}
+#weatherBlock {
+	display: flex;
+	flex-flow: column;
+	margin-top: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+}
+#weatherBlock > img {
+	align-self: center;
+}
+#weatherBlock > h2,
+#weatherBlock > h5 {
+	align-self: flex-start;
+	margin: 0;
+	text-align: left;
+}
+#weatherBlock > h5 {
+	font-size: 2rem;
+	font-family: 'Gill Sans';
+	font-weight: 900;
+}
+#weatherBlock > img {
+	width: 50%;
+	height: auto;
+}

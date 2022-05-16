@@ -3,7 +3,6 @@ import Weather from './Weather';
 function DailyInfo() {
 	return (
 		<div className="dailyInfo">
-			<h1>Daily Info</h1>
 			<Weather />
 		</div>
 	);

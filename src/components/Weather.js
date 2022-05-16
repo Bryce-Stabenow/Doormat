@@ -32,30 +32,39 @@ function Weather() {
 
 	return (
 		<div>
-			<h3>{useWeather?.condition?.text}</h3>
-			<img src={useWeather?.current?.condition?.icon} alt=""></img>
-			<h2>
-				{useWeather?.current.temp_f === 999
-					? ''
-					: `${useWeather?.current.temp_f}°F`}
-				<br />
-				{useWeather?.location?.name}
-				<br />
-				{useWeather?.location?.region}
-			</h2>
+			<h1>Daily Info</h1>
 			<form onSubmit={(e) => e.preventDefault()}>
 				<label htmlFor="zipInput">Enter zip code or city for weather:</label>
 				<input
 					type="text"
 					name="zipInput"
+					id="weatherTextInput"
 					onChange={(e) => setWeatherZip(e.target.value)}
 				></input>
 				<input
 					type="submit"
 					value="Get Weather"
+					id="weatherSubmitInput"
 					onClick={() => handleWeatherSubmit(useWeatherZip)}
 				></input>
 			</form>
+			<div id="weatherBlock">
+				<h5>{useWeather?.current?.condition?.text}</h5>
+				<img src={useWeather?.current?.condition?.icon} alt=""></img>
+				<h5>
+					{useWeather?.current.temp_f === 999
+						? ''
+						: `${useWeather?.current.temp_f}°F`}
+				</h5>
+				<br />
+				<h2>
+					{useWeather?.location?.name}
+					<br />
+					{useWeather?.location?.region}
+					<br />
+					Wind: {useWeather?.current?.wind_mph} mph
+				</h2>
+			</div>
 		</div>
 	);
 }
