@@ -1,9 +1,14 @@
 import Weather from './Weather';
 
-function DailyInfo() {
+function DailyInfo({ useWeather, setWeather, useWeatherZip, setWeatherZip }) {
 	return (
 		<div className="dailyInfo">
-			<Weather />
+			<Weather
+				useWeather={useWeather}
+				setWeather={setWeather}
+				useWeatherZip={useWeatherZip}
+				setWeatherZip={setWeatherZip}
+			/>
 		</div>
 	);
 }

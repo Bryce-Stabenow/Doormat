@@ -1,6 +1,4 @@
-import { useState } from 'react';
-
-function Weather() {
+function Weather({ useWeather, setWeather, useWeatherZip, setWeatherZip }) {
 	async function handleWeatherSubmit(zip) {
 		const weather = await fetch(
 			`http://api.weatherapi.com/v1/current.json?key=eafc1019a81b4f6799933335221305&q=${zip}&aqi=no`
@@ -10,25 +8,6 @@ function Weather() {
 		console.log(weatherData);
 		setWeather(weatherData);
 	}
-
-	const [useWeatherZip, setWeatherZip] = useState('90210');
-	const [useWeather, setWeather] = useState({
-		location: {
-			name: '',
-			region: '',
-		},
-		current: {
-			temp_f: 999,
-			condition: {
-				text: '',
-				icon: '',
-				code: 1000,
-			},
-			wind_mph: 0,
-			wind_dir: '',
-			humidity: 0,
-		},
-	});
 
 	return (
 		<div>

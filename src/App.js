@@ -187,6 +187,24 @@ function App() {
 		firstName: 'Bryce',
 		lastName: 'Stabenow',
 	});
+	const [useWeatherZip, setWeatherZip] = useState('90210');
+	const [useWeather, setWeather] = useState({
+		location: {
+			name: '',
+			region: '',
+		},
+		current: {
+			temp_f: 999,
+			condition: {
+				text: '',
+				icon: '',
+				code: 1000,
+			},
+			wind_mph: 0,
+			wind_dir: '',
+			humidity: 0,
+		},
+	});
 
 	return (
 		<main>
@@ -202,7 +220,12 @@ function App() {
 						onSubmit={onSubmit}
 					/>
 				) : (
-					<DailyInfo />
+					<DailyInfo
+						useWeather={useWeather}
+						setWeather={setWeather}
+						useWeatherZip={useWeatherZip}
+						setWeatherZip={setWeatherZip}
+					/>
 				)}
 			</div>
 			<Footer />
