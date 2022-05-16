@@ -1,7 +1,7 @@
 function Weather({ useWeather, setWeather, useWeatherZip, setWeatherZip }) {
 	async function handleWeatherSubmit(zip) {
 		const weather = await fetch(
-			`http://api.weatherapi.com/v1/current.json?key=eafc1019a81b4f6799933335221305&q=${zip}&aqi=no`
+			`https://api.weatherapi.com/v1/current.json?key=eafc1019a81b4f6799933335221305&q=${zip}&aqi=no`
 		);
 		const weatherData = await weather.json();
 

@@ -6,7 +6,9 @@ function TileEditor({ num, tile, tiles, setTiles, onSubmit }) {
 
 		if (newTile.img === '') {
 			let trimDom = newTile.link.replace(/http:\/\//, '');
-			const data = await fetch(`http://favicongrabber.com/api/grab/${trimDom}`);
+			const data = await fetch(
+				`https://favicongrabber.com/api/grab/${trimDom}`
+			);
 			const logoJSON = await data.json();
 			newTile.img = logoJSON.icons[0].src;
 

@@ -1,6 +1,8 @@
 # Doormat
 
-A quick, easy, hompage for tab
+A quick, easy, hompage you can customize yourself!
+
+ATTENTION: Github pages is currently not working. Trying to fix this soon!
 
 ## Tools and Development
 
