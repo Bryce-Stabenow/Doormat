@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/doormat/static/css/main.ff6c8fa4.css",
-    "main.js": "/doormat/static/js/main.6c90720e.js",
-    "static/js/787.4e183874.chunk.js": "/doormat/static/js/787.4e183874.chunk.js",
-    "index.html": "/doormat/index.html",
-    "main.ff6c8fa4.css.map": "/doormat/static/css/main.ff6c8fa4.css.map",
-    "main.6c90720e.js.map": "/doormat/static/js/main.6c90720e.js.map",
-    "787.4e183874.chunk.js.map": "/doormat/static/js/787.4e183874.chunk.js.map"
+    "main.css": "/Doormat/static/css/main.ff6c8fa4.css",
+    "main.js": "/Doormat/static/js/main.ca9b80a5.js",
+    "static/js/787.4e183874.chunk.js": "/Doormat/static/js/787.4e183874.chunk.js",
+    "index.html": "/Doormat/index.html",
+    "main.ff6c8fa4.css.map": "/Doormat/static/css/main.ff6c8fa4.css.map",
+    "main.ca9b80a5.js.map": "/Doormat/static/js/main.ca9b80a5.js.map",
+    "787.4e183874.chunk.js.map": "/Doormat/static/js/787.4e183874.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff6c8fa4.css",
-    "static/js/main.6c90720e.js"
+    "static/js/main.ca9b80a5.js"
   ]
 }
