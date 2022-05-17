@@ -2,7 +2,7 @@
 
 A quick, easy, hompage you can customize yourself!
 
-ATTENTION: Github pages is currently not working. Trying to fix this soon!
+![Doormat in action gif](https://github.com/Bryce-Stabenow/Doormat/blob/2980bca5e335cf885e69d11cac28c37f11bfecd1/Doormat%20Preview.gif)
 
 ## Tools and Development
 
